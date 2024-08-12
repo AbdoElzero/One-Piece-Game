@@ -87,7 +87,7 @@ const revealLetter = () => {
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "You don't have enough coins to reveal a letter \nprice of the letter 10 coins",
+            text: "You don't have enough coins to reveal a letter \nprice of the letter 6 coins",
           });
     }
 }
