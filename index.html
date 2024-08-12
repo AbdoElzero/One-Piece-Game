@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/victory.gif" type="image/x-icon">
+    <title>One | Piece | Game</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/word-list.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <div class="start">
+        <button class="containe one">
+            <strong>PLAY NOW</strong>
+            <div id="glow">
+                <div class="circle"></div>
+            </div>
+            <div class="inner-container">
+                <div class="fade"></div>
+
+                <div class="up-text">
+                    <div class="crawl">
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                    </div>
+                </div>
+            </div>
+        </button>
+        <button onclick="exitSite()" class="containe two">
+            <strong>EXIT</strong>
+            <div id="glow">
+                <div class="circle"></div>
+            </div>
+            <div class="inner-container">
+                <div class="fade"></div>
+
+                <div class="up-text">
+                    <div class="crawl">
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                    </div>
+                </div>
+            </div>
+        </button>
+    </div>
+    <div class="page">
+        <div class="game-modal">
+            <div class="content">
+                <img src="#" alt="gif">
+                <h4>Game Over!</h4>
+                <p>The correct word was: <b>rainbow</b></p>
+                <div class="btns">
+                    <button class="play-again" style="display:none;">The next role</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hangman-box">
+                <div class="all">
+                    <div class="question-counter">
+                        <span id="questionCounter">1/15</span>
+                        <i class="fa-solid fa-clipboard-question"></i>
+                    </div>
+                    <div class="coins-container">
+                        <span id="coins">0</span>
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <div class="question-timer">
+                        <span id="timer">15</span>
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                </div>
+                <img class="word-image" src="" alt="Word Image">
+            </div>
+            <div class="game-box">
+                <ul class="word-display"></ul>
+                <h4 class="hint-text">Question: <b></b></h4>
+                <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
+                <button id="reveal-letter-btn">Show
+                    <i class="fa-solid fa-lightbulb"></i>
+                </button>
+                <div class="keyboard"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function exitSite() {
+            window.close();
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
